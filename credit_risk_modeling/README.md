@@ -76,12 +76,14 @@ A FastAPI-based service is implemented for real-time credit risk prediction.
 - Prediction logging with timestamp and model versioning
 
 ## Project Structure
+```text
 credit_risk_modeling/
 ├── credit_risk_modeling_ml_pipeline.ipynb
 ├── credit_risk_fast_api.py
 ├── model.pkl
 ├── scaler.pkl
 ├── README.md
+```
 
 ## 🛠 Tech Stack
 - Python (Pandas, NumPy, Scikit-learn, XGBoost)

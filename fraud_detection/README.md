@@ -37,6 +37,7 @@ fraud_detection_project/
 ├── prediction.log                      # Prediction logs for monitoring
 │
 └── README.md                           # Project documentation
+```
 ---
 
 ##  Workflow Overview
@@ -127,19 +128,19 @@ The system produces:
 ### 1. Start API
 ```bash
 uvicorn api:app --reload
+```
 
 ### 2. Start Dashboard
 ```bash
 streamlit run fraud_monitoring_dashboard.py
+```
 
 ---
 
-## Output of fraud monitoring dashboard
-```bash
+## Output of Fraud Monitoring Dashboard
 ![Dashboard](fraud_monitoring_dashboard.jpg)
 
 ---
 
-## Output of system monitoring dashboard
-```bash
+## Output of System Monitoring Dashboard
 ![Dashboard](system_monitoring_dashboard.png)

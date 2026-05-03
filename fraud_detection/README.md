@@ -19,6 +19,7 @@ The system includes the full ML lifecycle: data processing, feature engineering,
 ---
 
 ##  Project Structure
+```text
 fraud_detection_project/
 │
 ├── fraud_detection_ml_pipeline.ipynb   # End-to-end ML pipeline (training + evaluation)
@@ -27,6 +28,8 @@ fraud_detection_project/
 │
 ├── fraud_monitoring_dashboard.py       # Streamlit monitoring dashboard
 │
+├── system_monitoring_dashboard.py       # System monitoring dashboard
+│
 ├── model.pkl                           # Trained Random Forest model
 │
 ├── threshold.pkl                       # Optimal decision threshold
@@ -34,7 +37,6 @@ fraud_detection_project/
 ├── prediction.log                      # Prediction logs for monitoring
 │
 └── README.md                           # Project documentation
-
 ---
 
 ##  Workflow Overview
@@ -127,4 +129,17 @@ The system produces:
 uvicorn api:app --reload
 
 ### 2. Start Dashboard
+```bash
 streamlit run fraud_monitoring_dashboard.py
+
+---
+
+## Output of fraud monitoring dashboard
+```bash
+![Dashboard](fraud_monitoring_dashboard.jpg)
+
+---
+
+## Output of system monitoring dashboard
+```bash
+![Dashboard](system_monitoring_dashboard.png)
